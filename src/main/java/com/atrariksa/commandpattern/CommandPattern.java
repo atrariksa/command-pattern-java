@@ -20,8 +20,11 @@ public class CommandPattern {
         PrimeNumberCommand primeNumberCommand = new PrimeNumberCommand(new PrimeNumberInput(11));
         Object primeNumberOutput = primeNumberCommand.execute();
         System.out.println(primeNumberOutput);
-        FibonacciCommand fibonacciCommand = new FibonacciCommand(new FibonacciInput(8));
+        FibonacciCommand fibonacciCommand = new FibonacciCommand(new FibonacciInput(20000));
         Object fibonacciOutput = fibonacciCommand.execute();
         System.out.println(fibonacciOutput);
+        FibonacciCommand fibonacciRecursiveCommand = new FibonacciCommand(new FibonacciInput(8, true));
+        Object fibonacciRecursiveOutput = fibonacciRecursiveCommand.execute();
+        System.out.println(fibonacciRecursiveOutput);
     }
 }

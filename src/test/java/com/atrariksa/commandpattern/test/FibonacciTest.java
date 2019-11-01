@@ -26,8 +26,14 @@ public class FibonacciTest {
     @Test
     public void fibonacciInputTest(){
         FibonacciInput fibonacciInput = new FibonacciInput(7);
+        FibonacciInput fibonacciRecursiveInput = new FibonacciInput(7, true);
         try {
             Assert.assertEquals(fibonacciInput.fibonacciNumber(), expectedValue);
+        } catch (Exception e) {
+            Assert.assertNull(e);
+        }
+        try {
+            Assert.assertEquals(fibonacciInput.fibonacciNumber(), fibonacciRecursiveInput.fibonacciNumber());
         } catch (Exception e) {
             Assert.assertNull(e);
         }

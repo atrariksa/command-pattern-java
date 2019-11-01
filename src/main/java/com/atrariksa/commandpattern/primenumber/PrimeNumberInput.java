@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PrimeNumberInput extends Input implements IInput {
     private Integer x;
-    private List<Integer> output = new ArrayList<>();
+    private List<Integer> output;
     public PrimeNumberInput(Integer x) {
         this.x = x;
     }
@@ -26,6 +26,7 @@ public class PrimeNumberInput extends Input implements IInput {
 
     @Override
     public List<Integer> primeNumbers() throws Exception {
+        output = new ArrayList<>();
         if (x.intValue() < 1) {
             throw new Exception(Constants.PRIME_NUMBER_INPUT_ERROR);
         }

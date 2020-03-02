@@ -17,3 +17,5 @@ markComment: >
   for your contributions.
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: "ini bakal diclose"
+# Limit to only `issues` or `pulls`
+only: pulls

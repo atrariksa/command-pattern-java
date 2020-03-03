@@ -14,4 +14,4 @@ jobs:
         stale-pr-label: 'no-pr-activity'
         exempt-pr-label: 'awaiting-approval'
         days-before-stale: 1
-        days-before-close: 1
+        days-before-close: 0
